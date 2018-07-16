@@ -260,16 +260,12 @@ while(pred.steps < 5000):
         zo = z
 
 
+#Testing
+today = [6000, 11000, 4000, 3000, 5000, 7000, 5000,
+         0, 0, 0, 0, 1, 0, 0, 22.0, 0.0]
 
-today = [6128, 11603, 4071, 3128, 5789, 7624, 5647,
-         0, 0, 0, 0, 1, 0, 0, 22.0, 4.0]
 
 print(pred.D.predict(np.array([today])))
-
-
-import tensorflowjs as tfjs
-
-tfjs.converters.save_keras_model(pred.D, 'C:/Users/mtm916/Desktop/PySpace/DIPO/ModelJS/')
 
 
 
